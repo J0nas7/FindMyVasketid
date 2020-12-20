@@ -186,6 +186,10 @@ a {
         margin-bottom: 25px;
     }
 
+    h3 {
+        margin: 25px 0;
+    }
+
     @media (min-width: $desktopWidth) {
         width: $desktopWidth;
         min-height: calc(100vh - 44px);
@@ -211,5 +215,19 @@ a {
         width: 150px;
         padding: 8px 0;
         font-size: 17px;
+    }
+
+    .reservations {
+        label.time {
+            display: block;
+
+            .occupied + span {
+                color: red;
+            }
+            .yours + span {
+                color: lightgreen;
+                font-weight: bold;
+            }
+        }
     }
 }
