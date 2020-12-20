@@ -56,6 +56,8 @@ for (var i = 1; i <= machines.length; i++) {
 function menuPress() {
     let menuId = this.id;
     displayPage(menuId.slice(-1));
+    navigation.classList.toggle("open");
+    menuTrigger.classList.toggle("triggered");
 }
 
 const menuLinks = document.getElementsByClassName("menuLink");

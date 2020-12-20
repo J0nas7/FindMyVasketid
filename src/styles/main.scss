@@ -198,7 +198,7 @@ a {
         background: #151414;
     }
 
-    input[type=text] {
+    input[type=text], input[name=yourName] {
         border: 0;
         padding: 15px 18px;
         width: 300px;
