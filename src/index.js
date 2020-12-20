@@ -1,7 +1,5 @@
-import { bro } from './bro';
 import './styles/main.scss';
 
-console.log(bro("Sup"));
 const yourName = localStorage.getItem("yourName");
 if (yourName == null) {
     document.getElementById("loginPage").style.display = "block";
